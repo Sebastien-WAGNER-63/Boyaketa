@@ -1,17 +1,15 @@
 # -*- coding: utf-8 -*-
 
 #Importing Library
-import cv2 
+import cv2
 
-img = cv2.imread('../asset/images/img6.jpg');
-
+img = cv2.imread('../../asset/images/img2.png');
 
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
-face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+face_cascade = cv2.CascadeClassifier('cascade.xml')
 
 faces = face_cascade.detectMultiScale(gray, 1.3, 5)
-
 
 if len(faces) != 0:         # If there are faces in the images
     for f in faces:         # For each face in the image
@@ -30,8 +28,8 @@ if len(faces) != 0:         # If there are faces in the images
 # cv2.imshow("Detected face", result_image)
 cv2.imshow('img',img)
 
-cv2.waitKey(0)  
-  
-#closing all open windows  
+cv2.waitKey(0)
+
+#closing all open windows
 cv2.destroyAllWindows()
-cv2.imwrite("../asset/images/result.png", img)
+cv2.imwrite("../../asset/images/result.png", img)

@@ -6,5 +6,5 @@ save_non_project_files = False
 
 [main]
 version = 0.2.0
-recent_files = ['code\\boyaketaKeras\\boyaketa.ipynb']
+recent_files = ['code\\boyaketa.py', 'code\\boyaketa2.py']
 
