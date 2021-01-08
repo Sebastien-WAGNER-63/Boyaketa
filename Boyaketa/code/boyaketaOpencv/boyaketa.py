@@ -3,7 +3,7 @@
 #Importing Library
 import cv2
 
-img = cv2.imread('../../asset/images/img2.png');
+img = cv2.imread('../../asset/images/img.jpg');
 
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
